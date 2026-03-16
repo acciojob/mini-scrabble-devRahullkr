@@ -5,4 +5,7 @@ const showLetter = document.querySelector("#letterCount")
 letter.addEventListener("input",function(){
 	const length = this.value.length;
 	showLetter.textContent = length;
+	if(length == 0){
+		showLetter.textContent = 0;
+	}
 })
